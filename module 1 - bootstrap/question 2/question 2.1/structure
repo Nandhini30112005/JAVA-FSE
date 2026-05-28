@@ -1,0 +1,11 @@
+1. CSS Folder
+The CSS folder contains Bootstrap stylesheet files.
+It is used for webpage design like colors, buttons, spacing, and layouts.
+
+2. JS Folder
+The JS folder contains JavaScript files.
+It is used for interactive components like dropdowns, modals, and carousels.
+
+3. Icons Folder
+The icons folder contains Bootstrap icons.
+It is used to add icons like search, home, and user icons in webpages
