@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap-sass-project",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass scss/custom.scss css/style.css --watch"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
