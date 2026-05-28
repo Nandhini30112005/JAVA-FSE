@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Preferences</title>
+</head>
+<body>
+
+<select id="eventType">
+    <option>Music</option>
+    <option>Dance</option>
+</select>
+
+<button onclick="savePreference()">Save</button>
+<button onclick="clearPreferences()">Clear Preferences</button>
+
+<script>
+function savePreference() {
+    let value = document.getElementById("eventType").value;
+    localStorage.setItem("event", value);
+}
+
+window.onload = function() {
+    let saved = localStorage.getItem("event");
+
+    if(saved) {
+        document.getElementById("eventType").value = saved;
+    }
+}
+
+function clearPreferences() {
+    localStorage.clear();
+    sessionStorage.clear();
+}
+</script>
+
+</body>
+</html>
