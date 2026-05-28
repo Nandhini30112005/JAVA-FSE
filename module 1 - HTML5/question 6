@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling</title>
+</head>
+<body>
+
+<input type="text" placeholder="Phone Number" onblur="validatePhone()">
+<br><br>
+
+<select onchange="showFee()">
+    <option>Choose Event</option>
+    <option value="100">Music</option>
+    <option value="200">Dance</option>
+</select>
+
+<p id="fee"></p>
+
+<button onclick="confirmSubmit()">Submit</button>
+
+<br><br>
+
+<img src="image.jpg" width="200" ondblclick="enlargeImage(this)">
+
+<br><br>
+
+<textarea onkeyup="countChars(this)"></textarea>
+<p id="count"></p>
+
+<script>
+function validatePhone() {
+    alert("Phone validation completed");
+}
+
+function showFee() {
+    document.getElementById("fee").innerHTML = "Event Fee Displayed";
+}
+
+function confirmSubmit() {
+    alert("Form Submitted Successfully");
+}
+
+function enlargeImage(img) {
+    img.style.width = "400px";
+}
+
+function countChars(text) {
+    document.getElementById("count").innerHTML = text.value.length;
+}
+</script>
+
+</body>
+</html>
