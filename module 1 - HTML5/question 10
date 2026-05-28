@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debugging</title>
+</head>
+<body>
+
+<h1 id="heading">Debug Example</h1>
+
+<button onclick="changeText()">
+    Click Here
+</button>
+
+<script>
+function changeText() {
+
+    console.log("Button clicked");
+
+    document.getElementById("heading").innerHTML =
+    "Text Changed";
+}
+</script>
+
+</body>
+</html>
