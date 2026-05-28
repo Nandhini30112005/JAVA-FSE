@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Types Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Body Styles */
+        body{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red;">
+        Welcome to CSS
+    </h1>
+    <h2 class="heading">
+        External CSS Example
+    </h2>
+    <p class="text">
+        This paragraph uses external CSS styling.
+    </p>
+</body>
+</html>
