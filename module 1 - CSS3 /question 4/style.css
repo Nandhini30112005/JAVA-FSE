@@ -1,0 +1,9 @@
+body {
+    background-color: #f0f0f0;
+    background-image: url('background.jpg');
+}
+
+h1 {
+    color: rgba(0,0,255,0.8);
+    background: linear-gradient(to right, orange, yellow);
+}
