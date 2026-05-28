@@ -1,0 +1,11 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.btn-primary {
+    padding: 10px 25px;
+}
