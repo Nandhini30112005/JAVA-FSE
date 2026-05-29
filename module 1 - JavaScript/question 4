@@ -1,0 +1,46 @@
+const eventList = [];
+
+// Add Event Function
+function addEvent(name, category) {
+    eventList.push({
+        name,
+        category
+    });
+
+    console.log("Event added successfully");
+}
+
+// Register User Function
+function registerUser(eventName, userName) {
+    console.log(`${userName} registered for ${eventName}`);
+}
+
+// Filter Function
+function filterEventsByCategory(category) {
+    return eventList.filter(event => event.category === category);
+}
+
+// Closure Example
+function registrationCounter() {
+    let totalRegistrations = 0;
+
+    return function() {
+        totalRegistrations++;
+        return totalRegistrations;
+    };
+}
+
+const counter = registrationCounter();
+console.log(counter());
+console.log(counter());
+
+// Callback Function
+function searchEvents(callback) {
+    return eventList.filter(callback);
+}
+
+addEvent("Music Show", "Music");
+addEvent("Cooking Class", "Workshop");
+
+const result = searchEvents(event => event.category === "Music");
+console.log(result);
