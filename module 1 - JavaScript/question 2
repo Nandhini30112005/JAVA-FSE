@@ -1,0 +1,17 @@
+const eventName = "Music Festival";
+const eventDate = "15-06-2026";
+let availableSeats = 50;
+
+let eventInfo = `Event: ${eventName} | Date: ${eventDate} | Seats: ${availableSeats}`;
+
+console.log(eventInfo);
+
+// Registration
+availableSeats--;
+console.log("Seat booked successfully");
+console.log("Remaining seats: " + availableSeats);
+
+// Cancellation
+availableSeats++;
+console.log("One seat cancelled");
+console.log("Available seats: " + availableSeats);
