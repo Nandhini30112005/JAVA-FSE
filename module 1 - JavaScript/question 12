@@ -1,0 +1,45 @@
+function registerUser() {
+
+    const userData = {
+        name: "Nandhini",
+        event: "Tech Conference"
+    };
+
+    console.log("Submitting...");
+
+    setTimeout(() => {
+
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify(userData)
+
+        })
+
+        .then(response => response.json())
+
+        .then(data => {
+
+            console.log("Success:", data);
+
+            alert("Registration Successful");
+
+        })
+
+        .catch(error => {
+
+            console.log("Error:", error);
+
+            alert("Registration Failed");
+
+        });
+
+    }, 2000);
+}
+
+registerUser();
