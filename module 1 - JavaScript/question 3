@@ -1,0 +1,46 @@
+const events = [
+    {
+        name: "Music Night",
+        date: "2026-06-20",
+        seats: 10
+    },
+    {
+        name: "Food Festival",
+        date: "2024-01-10",
+        seats: 0
+    },
+    {
+        name: "Tech Workshop",
+        date: "2026-07-15",
+        seats: 5
+    }
+];
+
+const currentDate = new Date();
+
+// Display only upcoming events with seats
+events.forEach(event => {
+    let eventDate = new Date(event.date);
+
+    if (eventDate > currentDate && event.seats > 0) {
+        console.log(`${event.name} is available for registration`);
+    }
+    else {
+        console.log(`${event.name} is not available`);
+    }
+});
+
+// Error handling
+try {
+    let registrationSeats = 2;
+
+    if (registrationSeats > events[0].seats) {
+        throw "Not enough seats available";
+    }
+
+    events[0].seats -= registrationSeats;
+    console.log("Registration successful");
+}
+catch(error) {
+    console.log("Error: " + error);
+}
