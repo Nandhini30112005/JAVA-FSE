@@ -1,0 +1,30 @@
+let communityEvents = [
+    {
+        name: "Music Concert",
+        category: "Music"
+    },
+    {
+        name: "Workshop on Baking",
+        category: "Workshop"
+    }
+];
+
+// Add New Event
+communityEvents.push({
+    name: "Guitar Show",
+    category: "Music"
+});
+
+console.log(communityEvents);
+
+// Filter Music Events
+const musicEvents = communityEvents.filter(event => event.category === "Music");
+
+console.log(musicEvents);
+
+// Display Event Cards
+const eventCards = communityEvents.map(event => {
+    return `Event Name: ${event.name}`;
+});
+
+console.log(eventCards);
