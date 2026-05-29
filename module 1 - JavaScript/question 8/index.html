@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling</title>
+</head>
+<body>
+
+<h2>Event Registration</h2>
+
+<input type="text" id="searchBox" placeholder="Search Event">
+
+<select id="categoryFilter">
+    <option value="All">All</option>
+    <option value="Tech">Tech</option>
+    <option value="Music">Music</option>
+</select>
+
+<div id="events">
+    <div class="event" data-category="Tech">
+        Tech Conference
+        <button class="registerBtn">Register</button>
+    </div>
+
+    <div class="event" data-category="Music">
+        Music Fest
+        <button class="registerBtn">Register</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
