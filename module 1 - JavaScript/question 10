@@ -1,0 +1,32 @@
+// let and const
+const eventName = "Tech Summit";
+let seats = 50;
+
+// default parameter
+function registerUser(name = "Guest") {
+    console.log(`Welcome ${name}`);
+}
+
+registerUser();
+
+
+// destructuring
+const eventDetails = {
+    title: "Music Fest",
+    date: "10 June",
+    venue: "Chennai"
+};
+
+const { title, date, venue } = eventDetails;
+
+console.log(title);
+console.log(date);
+console.log(venue);
+
+
+// spread operator
+const events = ["Tech", "Music", "Sports"];
+
+const clonedEvents = [...events];
+
+console.log(clonedEvents);
